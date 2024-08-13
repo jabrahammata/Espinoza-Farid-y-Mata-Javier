@@ -11,11 +11,11 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class odontologoDAO implements iDao<odontologo> {
-    public static final String INSERT = "INSERT INTO odontologo (nombre, apellido, matricula) VALUES (?, ?, ?)";
-    public static final String SELECT_ID = "SELECT * FROM odontologo WHERE id = ?";
-    public static final String SELECT_ALL = "SELECT * FROM odontologo";
-    public static final String UPDATE = "UPDATE odontologo SET nombre = ?, apellido = ?, matricula = ? WHERE id = ?";
-    public static final String DELETE = "DELETE FROM odontologo WHERE id = ?";
+    public static final String INSERT = "INSERT INTO odontologos (nombre, apellido, matricula) VALUES (?, ?, ?)";
+    public static final String SELECT_ID = "SELECT * FROM odontologos WHERE id = ?";
+    public static final String SELECT_ALL = "SELECT * FROM odontologos";
+    public static final String UPDATE = "UPDATE odontologos SET nombre = ?, apellido = ?, matricula = ? WHERE id = ?";
+    public static final String DELETE = "DELETE FROM odontologos WHERE id = ?";
     private Connection connection;
     private Logger logger = Logger.getLogger(odontologoDAO.class);
 
@@ -104,11 +104,11 @@ public class odontologoDAO implements iDao<odontologo> {
     }
 
     @Override
-    public void delete(odontologo odontologo) {
+    public void delete(int id) {
         try {
             connection.setAutoCommit(false);
             java.sql.PreparedStatement preparedStatement = connection.prepareStatement(DELETE);
-            preparedStatement.setInt(1, odontologo.getId());
+            preparedStatement.setInt(1, id);
             preparedStatement.executeUpdate();
             connection.commit();
             logger.info("odontologo deleted");
@@ -154,7 +154,7 @@ public class odontologoDAO implements iDao<odontologo> {
 
     @Override
     public List<odontologo> getAll() {
-        List<odontologo> odontologos = null;
+        List<odontologo> odontologos = new java.util.ArrayList<>();
         try {
             java.sql.PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL);
             java.sql.ResultSet resultSet = preparedStatement.executeQuery();

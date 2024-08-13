@@ -1,0 +1,21 @@
+2024-08-13 18:37:44.559453-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ODONTOLOGO" not found; SQL statement:
+INSERT INTO odontologo (nombre, apellido, matricula) VALUES (?, ?, ?) [42102-230]
+2024-08-13 18:37:44.598474-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ODONTOLOGO" not found; SQL statement:
+INSERT INTO odontologo (nombre, apellido, matricula) VALUES (?, ?, ?) [42102-230]
+2024-08-13 18:37:44.605236-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ODONTOLOGO" not found; SQL statement:
+INSERT INTO odontologo (nombre, apellido, matricula) VALUES (?, ?, ?) [42102-230]
+2024-08-13 18:37:44.614822-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ODONTOLOGO" not found; SQL statement:
+SELECT * FROM odontologo [42102-230]
+2024-08-13 18:37:44.627407-05:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ODONTOLOGO" not found; SQL statement:
+INSERT INTO odontologo (nombre, apellido, matricula) VALUES (?, ?, ?) [42102-230]
+2024-08-13 18:37:44.640603-05:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ODONTOLOGO" not found; SQL statement:
+INSERT INTO odontologo (nombre, apellido, matricula) VALUES (?, ?, ?) [42102-230]
+2024-08-13 18:37:44.653419-05:00 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ODONTOLOGO" not found; SQL statement:
+INSERT INTO odontologo (nombre, apellido, matricula) VALUES (?, ?, ?) [42102-230]
