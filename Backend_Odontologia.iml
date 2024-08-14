@@ -10,7 +10,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../../GSON/h2-2.3.230.jar!/" />
+          <root url="jar://C:/Users/GSON/h2-2.3.230.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../../apache-log4j-1.2.17/log4j-1.2.17.jar!/" />
+          <root url="jar://C:/Users/apache-log4j-1.2.17/log4j-1.2.17.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -36,6 +36,24 @@
           <root url="jar://$MODULE_DIR$/lib/junit-jupiter-params-5.8.1.jar!/" />
           <root url="jar://$MODULE_DIR$/lib/junit-jupiter-engine-5.8.1.jar!/" />
           <root url="jar://$MODULE_DIR$/lib/junit-platform-engine-1.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://G:/Files/CTD/Backend/h2-2.3.230.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://G:/Files/CTD/Backend/apache-log4j-1.2.17/log4j-1.2.17.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
